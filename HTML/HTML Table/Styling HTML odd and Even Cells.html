@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Styling HTML Odd and Even Cells </title>
+<style>
+	table, tr, th {
+	border: 2px solid black;
+	border-collapse:collapse;
+	}
+	table {
+	width:87%;
+	}
+	tr,th{
+	padding:8px;
+	}
+	tr:nth-child(even) {
+	background-color:lightgreen;
+	}
+	tr:nth-child(odd)
+	{
+	background-color:cyan;
+	}
+	th{
+	background-color:gray;
+	color:White;
+	}
+</style>
+</head>
+<body>
+	<h1> Styling HTML Odd And Even Cells </h1>
+	<br>
+	<br>
+	<h2 title="nthChild?"> What is meant by <b>n-th Child</b>? </h2>
+	<br>
+	<p title="nthChildDefinition">
+	The <b>:nth-child(n)</b> selector matches every element that is <b>the nth child</b>, regardless of type, of its parent. <b>n</b> can be a number, a keyword, or a formula.
+	</p>
+	<br>
+	<br>
+	<table>
+	<caption> UserInfo</caption>
+	<thead>
+	<th> UserId </th>
+	<th> UserName </th>
+	</thead>
+	<tbody>
+	<tr>
+		<td>345</td>
+		<td>Saravanan</td>
+	</tr>
+	<tr>
+		<td>789</td>
+		<td>Ganesh </td>
+	</tr>
+	<tr>
+		<td>1209</td>
+		<td>Periyasamy</td>
+	</tr>
+	<tr>
+		<td>6543</td>
+		<td>Priyanka</td>
+	</tr>
+	</tbody>
+	</table>
+</body>
+</html>

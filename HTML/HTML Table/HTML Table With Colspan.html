@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> HTML Table with colspan</title>
+<style>
+	#cols, .colsp,.colspan{
+	border:2px solid violet;
+	border-collapse:collapse;
+	}
+	.colsp, .colspan{
+	padding:20px;
+	}
+	#cols {
+	width:90%;
+	}
+</style>
+</head>
+<body>
+	<h1 title="HTML Table With colspan">HTML Table With Colspan </h1>
+	<br>
+	<p title="TableWithColspanDef">
+	If you want to make a cell span more than one column, you can use the colspan attribute.<br><br>
+	It will divide one cell/row into multiple columns, and the number of columns depend on the value of colspan attribute.<br><br>
+	</p>
+	<br>
+	<br>
+	<h2 title="TableWithColspanEx"> Table With Colspan Ex</h2>
+	<br>
+	<br>
+	<table id="cols">
+	<thead>
+		<th colspan="2" class="colsp">UserName</th>
+		<th class="colsp">Score</th>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="colspan">Thiru</td>
+			<td class="colspan">Arasu</td>
+			<td class="colspan">78</td>
+		</tr>
+		<tr>
+			<td class="colspan">Sabari</td>
+			<td class="colspan">Sathasivam</td>
+			<td class="colspan">67</td>
+		</tr>
+		<tr>
+			<td class="colspan">Pradeepkumar</td>
+			<td class="colspan">Raman</td>
+			<td class="colspan">99</td>
+		</tr>
+	</tbody>
+	
+	</table>
+</body>
+</html>

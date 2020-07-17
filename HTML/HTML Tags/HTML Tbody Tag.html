@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> HTML Tbody Tag </title>
+<style>
+.tableName,.head,.data{
+border-collapse:collapse;
+border:2px solid black;
+}
+.head,.data{
+padding:5px;
+}
+.tableName{
+width:100%;
+}
+#aliLeft{
+text-align: left;
+}
+#aliRight{
+text-align:right;
+}
+#aliJustify{
+text-align:justify;
+}
+#aliCenter{
+text-align:center;
+}
+</style>
+</head>
+<body>
+	<h1> HTML Tbody Tag </h1>
+	<br>
+	<br>
+	<p title="HTMLTbodyTagDef">
+	HTML <b>tbody</b> tag is used to group the table rows <b>(tr)</b> together, which indicates that this is body part of a table <b>(table)</b>.<br>
+	The <b>tbody</b> tag must be a child of <b>table</b> element.
+	The <tbody> is used along with <b>thead</b> and <b>tfoot</b> which shows the different part of the table that are table head, table body, and table footer, however, it does not affect the layout of the table.<br>
+	These elements can be used for providing semantic information which can be helpful in accessibility purpose, or rendering the header at top and footer at the bottom while printing a large table.<br>
+	</p>
+	<br>
+	<br>
+	<br>
+	<h2 title="Attribute">
+	Attribute
+	</h2>
+	<h3 title="TagSpecificAttribute">
+	Tag-Specific Attributes 
+	</h3>
+	<table class="tableName">
+	<caption>
+	HTML Body Tag Attributes Samples
+	</caption>
+	<thead>
+		<th class="head">Attribute</th>
+		<th class="head">Value</th>
+		<th class="head">Description</th>
+	</thead>
+	<tbody>
+	<tr>
+		<td class="data">align</td>
+		<td class="data">
+			right<br>
+			left<br>
+			justify<br>
+			center<br>
+			char
+		</td>
+		<td class="data">
+			It determines the alignment of the content inside the <i>tbody</i> element. <b>(Not Supported in HTML5)</b>
+		</td>
+	</tr>
+	<tr>
+		<td class="data">char</td>
+		<td class="data">character</td>
+		<td class="data">
+			It specifies the alignment of the <i>tbody</i> content to the character. <b>(Not Supported in HTML5)</b>
+		</td>
+	</tr>
+	<tr>
+		<td class="data">charoff</td>
+		<td class="data">Number</td>
+		<td class="data">
+			It specifies the number of characters the content will be aligned from the character specified by the char attribute. <b>(Not Supported in HTML5)</b>
+		</td>
+	</tr>
+	<tr>
+		<td class="data">valign</td>
+		<td class="data">top <br>
+		   middle<br>
+		   bottom <br>
+		   baseline<br>
+		</td>
+		<td class="data">
+		It determines the vertical alignment of the content inside the <i>tbody</i> element.<b> (Not Supported in HTML5)</b>
+		</td>
+	</tr>
+	</tbody>
+	</table>
+	<br>
+	<br>
+	<h2 title="tbodyAlignLeft"> Tbody Align Left </h2>
+	<br>
+	<br>
+	<table class="tableName">
+	  <caption> Tbody Align Left </caption>
+	<thead>
+		<th class="head"> Name </th>
+		<th class="head"> Subject</th>
+	</thead>
+	<tbody id="aliLeft">
+		<tr>
+			<td class="data"> Thiru</td>
+			<td class="data"> Maths </td>
+		</tr>
+		<tr>
+			<td class="data"> Prabha</td>
+			<td class="data"> Science </td>
+		</tr>
+	</tbody>
+	</table>
+	<br>
+	<br>
+	<h2 title="tbodyAlignRight"> Tbody Align Right </h2>
+	<br>
+	<br>
+	<table class="tableName">
+	  <caption> Tbody Align Right </caption>
+	<thead>
+		<th class="head"> Name </th>
+		<th class="head"> Subject</th>
+	</thead>
+	<tbody id="aliRight">
+		<tr>
+			<td class="data"> Thiru</td>
+			<td class="data"> Maths </td>
+		</tr>
+		<tr>
+			<td class="data"> Prabha</td>
+			<td class="data"> Science </td>
+		</tr>
+	</tbody>
+	</table>
+	<br>
+	<br>
+	<h2 title="tbodyAlignJustify"> Tbody Align Justify </h2>
+	<br>
+	<br>
+	<table class="tableName">
+	  <caption> Tbody Align Justify </caption>
+	<thead>
+		<th class="head"> Name </th>
+		<th class="head"> Subject</th>
+	</thead>
+	<tbody id="aliJustify">
+		<tr>
+			<td class="data"> Thiru Arasu Sabarinathan</td>
+			<td class="data"> Maths English Tamil </td>
+		</tr>
+		<tr>
+			<td class="data"> Prabha Karan Vasu Senthil</td>
+			<td class="data"> Science Social Science </td>
+		</tr>
+	</tbody>
+	</table>
+	<h2 title="tbodyAlignJustify"> Tbody Align Center </h2>
+	<br>
+	<br>
+	<table class="tableName">
+	  <caption> Tbody Align Center </caption>
+	<thead>
+		<th class="head"> Name </th>
+		<th class="head"> Subject</th>
+	</thead>
+	<tbody id="aliCenter">
+		<tr>
+			<td class="data"> Thiru Arasu Sabarinathan</td>
+			<td class="data"> Maths English Tamil </td>
+		</tr>
+		<tr>
+			<td class="data"> Prabha Karan Vasu Senthil</td>
+			<td class="data"> Science Social Science </td>
+		</tr>
+	</tbody>
+	</table>
+		<h2 title="tbodyVerticalAlignJustify"> Tbody Vertical Align Middle </h2>
+	<br>
+	<br>
+	
+</body>
+</html>

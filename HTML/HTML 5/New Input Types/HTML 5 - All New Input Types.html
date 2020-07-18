@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> HTML 5 - All New Input Types </title>
+</head>
+<body>
+	<h1> HTML 5 - All New Input Types </h1>
+	<br>
+	<br>
+	<h2 title="HTML5RegForm"> HTML 5 Registration Form </h2>
+	<br>
+	<br>
+	<form>
+	<fieldset>
+	<Legend><b> HTML 5 Registration Form With All New Input Types </b></Legend>
+	<Label For="UserName"> Enter Your Name:</Label>
+	<input type="text" name="Uname"/><br><br>
+	<Label For="Email"> Enter Your Email:</Label>
+	<input type="email" name="Email" required/><br><br>
+	<Label For="Password"> Enter Your Password:</Label>
+	<input type="password" name="password"/><br><br>
+	<br>
+	<hr>
+	<br>
+	<Label For="UserInfo"> <b>UserInformation</b></Label> <br><br>
+	<Label For="Age"> Enter Your Age:</Label>
+	<input type="number" value="age" min="25" max="60"/><br><br>
+	<Label For="PhoneNumber"> Enter Your MobileNo in XXX-XXX-XXX Format:  </Label>
+	<input type="tel" name="mobileNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/> <br><br>
+	<Label For="DateOfBirth"> Enter Your Date of Birth In Months, Year: </Label>
+	<input type="month" name="DateOfBirth" /><br><br>
+	<Label For="AnotherEmails"> Enter Your Another Emails: </Label>
+	<input type="email" name="anotherEmails" multiple/><br><br>
+	<Label For="WebSite"> Enter Your WebSite </Label>
+	<input type="url" name="website" placeholder="https:\\www.example.com" /><br>
+	<br>
+	<hr>
+	<br>
+	<Label For="Provisional Date"> <b>Select Your Provisional Dates</b></Label><br>
+	<br>
+	<br>
+	<Label For="BeginDate">Begin Date </Label>
+	<input type="date" name="Start Date"> 
+	<Label For="EndDate"> End Date </Label>
+	<input type="date" name="End Date"/>
+	<br>
+	<br>
+	<Label For="SearchPinNumber"> Search Pin Number </Label>
+	<input type="search" name="searchpinNumber"/><br><br>
+	<Label For="SelectWeekOfMonth"> Select Any Week Of This Month: </Label>
+	<input type="week" name="anyweekofthismonth"/><br><br>
+	<Label For="ScheduleMeeting"> Schedule Your Meeting </Label>
+	<input type="datetime-local" name="ScheduleMeeting"/><br><br>
+	<Label For="Select a Color"> Choose Color</Label>
+	<input type="color" name="ChooseColor"/>
+	<br><br>
+	<input type="submit" value="Submit"/>
+	<input type="reset" value="Reset"/>
+	</fielset>
+	</form>
+</body>
+</html>

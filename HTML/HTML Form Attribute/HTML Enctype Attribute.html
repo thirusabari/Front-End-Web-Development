@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> HTML Enctype Attribute </title>
+<style>
+table, th, td {
+border-collapse: collapse;
+border:2px solid black;
+}
+th, td{
+padding:4px;
+}
+table{
+width:100%;
+}
+</style>
+</head>
+<body>
+	<h1 title="HTML Enctype Attribute"> HTML Enctype Attribute </h1>
+	<br>
+	<br>
+	<p title="HTMLEnctypeDefinition">
+	The <b>HTML enctype attribute</b> defines the encoding type of form-content while submitting the form to the server. <br>
+	The enctype attribute specifies <b>how the form-data should be encoded when submitting it to the server</b>.<br>
+	<br>
+	<b>Note:</b> The enctype attribute can be used only if <b>method="post".</b>
+	</p>
+	<br>
+	<br>
+	<h2 title="HTMLEcntypeList"> HTML Enctype List </h2>
+	<br>
+	<table>
+	<caption> <b> HTML Enctype List </b></caption>
+	<thead>
+	<th> Name </th>
+	<th> Definition</th>
+	</thead>
+	<tbody>
+	<tr>
+		<td><b>application/x-www-form-urlencoded</b></td>
+		<td>It is default encoding type if the enctype attribute is not included in the form. All characters are encoded before submitting the form.<br>
+		(spaces are converted to "+" symbols, and special characters are converted to ASCII HEX values)
+		</td>
+	</tr>
+	<tr>
+		<td><b>multipart/form-data</b></td>
+		<td> It does not encode any character. It is used when our form contains file-upload controls.</td>
+	</tr>
+	<tr>
+		<td><b>text/plain (HTML5)</b></td>
+		<td>In this encoding type only space are encoded into + symbol and no any other special character encoded.</td>
+	</tr>
+	</tbody>
+	</table>
+	<br>
+	<br>
+	<h2 title="DefaultEnctype"> Default Enctype </h2>
+	<br>
+	<br>
+	<form action="action.html" target="_self" method="post" enctype="application/x-www-form-urlencoded">
+	<fieldset>
+	<Legend> <b>Default Enctype</b> </Legend>
+	<Label For="YourName"> Enter Your Name: </Label>
+	<input type="text" name="YourName" /><br>
+	<Label For="Password"> Enter Your Password: </Label>
+	<input type="password" name="YourPassowrd"/><br>
+	<input type="submit" Value="Submit"/>
+	</fieldset>
+	</form>
+	<br>
+	<br>
+	<h2 title="Multipart"> Multipart Form Data</h2>
+	<br>
+	<br>
+	<form action="action.html" target="_self" method="post" enctype="multipart/form-data">
+	<fieldset>
+	<Legend> <b>multipart/form-data</b> </Legend>
+	<Label For="YourName"> Enter Your Name: </Label>
+	<input type="text" name="YourName" /><br>
+	<Label For="Password"> Enter Your Password: </Label>
+	<input type="password" name="YourPassowrd"/><br>
+	<input type="file" name="uploadFile" /><br><br>
+	<input type="submit" Value="Submit Form"/>
+	</fieldset>
+	</form>
+	<br>
+	<br>
+	<h2 title="text plain HTML5"> Text/Plain(HTML5)</h2>
+	<br>
+	<br>
+	<form action="action.html" target="_self" method="post" enctype="text/plain (HTML5)">
+	<fieldset>
+	<Legend> <b>text/plain (HTML5)</b> </Legend>
+	<Label For="YourName"> Enter Your Name: </Label>
+	<input type="text" name="YourName" /><br>
+	<Label For="Password"> Enter Your Password: </Label>
+	<input type="password" name="YourPassowrd"/><br>
+	<input type="submit" Value="Send Data"/>
+	</fieldset>
+	</form>
+</body>
+</html>

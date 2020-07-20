@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Method Attribute </title>
+<style>
+table, th,td{
+border:2px solid black;
+border-collapse:collapse;
+
+}
+th{
+background-color:violet;
+}
+th,td{
+padding:5px;
+}
+table{
+width:100%;
+}
+</style>
+</head>
+<body>
+	<h1 title="HTMLMethodAttribute"> HTML Method Attribute </h1>
+	<br>
+	<br>
+	<h2 title="HTMLMethodList">  HTML Method Attribute List </h2>
+	<br>
+	<table>
+	<caption> <b> HTML Method Attribute List </b> </caption>
+	<thead>
+	<th>Name</th>
+	<th>Defintion</th>
+	</thead>
+	<tbody>
+	<tr> 
+	<td> <b>Post</b></td>
+	<td>We can use the post value of method attribute when we want to process the sensitive data as it does not display the submitted data in URL.</td>
+	</tr>
+	<tr> 
+	<td> <b>Get</b></td>
+	<td>The get value of method attribute is default value while submitting the form. But this is not secure as it displays data in URL after submitting the form.</td>
+	</tr>
+	</tbody>
+	</table>
+	<br>
+	<br>
+	<h3 title="PostMethod">Post Method Example</h3>
+	<br>
+	<br>
+	<form action="action.html" method="post">
+	<fieldset>
+	<Legend> Post Method Example </Legend>
+	<Label For="Email">Enter Your EmailId: </Label>
+	<input type="email" name="EmailId" required/><br><br>
+	<Label For="Password">Enter Your Password: </Label>
+	<input type="password" name="Passowrd"/><br>
+	<input type="submit" value="RedirectGoogle"/>
+	</fieldset>
+	</form>
+	<br>
+	<br>
+	<h3 title="GetMethod">Get Method Example</h3>
+	<br>
+	<br>
+	<form action="action.html" method="get">
+	<fieldset>
+	<Legend> Get Method Example </Legend>
+	<Label For="Email">Enter Your EmailId: </Label>
+	<input type="email" name="EmailId" required/><br><br>
+	<Label For="Password">Enter Your Password: </Label>
+	<input type="password" name="Passowrd"/><br>
+	<input type="submit" value="RedirectGoogle"/>
+	</fieldset>
+	</form>
+</body>
+</html>

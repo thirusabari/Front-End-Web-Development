@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> HTML Target Attribute </title>
+<style>
+table, th, td{
+border-collapse:collapse;
+border:2px solid black;
+}
+th, td{
+padding:10px;
+}
+table{
+width:100%;
+}
+</style>
+</head>
+<body>
+<h1> HTML Target Attribute </h1>
+<br>
+<br>
+<p title="HTMLTargetAttributeDef">
+	The target attribute defines where to open the response after submitting the form. The following are the keywords used with the <b>target attribute</b>.
+</p>
+<br>
+<h2 title="AttributeList">Target Attribute List</h2>
+<br>
+<br>
+<table>
+<caption><b>HTML Target Attribute List</b></caption>
+<thead>
+<th> Name </th>
+<th> Usage </th>
+</thead>
+<tbody>
+	<tr>
+		<td><b>_self</b></td>
+		<td>If we use <b>_self</b> as an attribute value, then the response will display in current page only.</td>
+	</tr>
+	<tr>
+		<td><b>_blank</b></td>
+		<td>If we use <b>_blank</b> as an attribute it will load the response in a new page.</td>
+	</tr>
+</tbody>
+</table>
+<br>
+<br>
+<h2 title="selfTarget"> Self Target Attribute</h2>
+<br>
+<br>
+<form action="action.html" method="get" target="_self">
+<fieldset>
+<Legend><b> HTML Target Attribute : _Self</b> </Legend>
+<Label For="UserName">Enter Your Name: </Label>
+<input type="text" name="UserName"/><br>
+<Label For="Password">Enter Your Password: </Label>
+<input type="password" name="Password"/><br>
+<input type="submit" value="Redirect To Action"/>
+</fieldset>
+</form>
+<br>
+<br>
+<h2 title="blankTarget"> Blank Target Attribute</h2>
+<br>
+<br>
+<form action="action.html" method="post" target="_blank">
+<fieldset>
+<Legend><b> HTML Target Attribute : _Blank</b> </Legend>
+<Label For="UserName">Enter Your Name: </Label>
+<input type="text" name="UserName"/><br>
+<Label For="Password">Enter Your Password: </Label>
+<input type="password" name="Password"/><br>
+<input type="submit" value="Redirect To Action"/>
+</fieldset>
+</form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> HTML Name Attribute </title>
+</head>
+<body>
+<h1> HTML Name Attribute </h1>
+<br>
+<br>
+<p title="nameAttributeDef">
+The HTML name attribute defines the name of an input element. The name and value attribute are included in HTTP request when we submit the form.<br><br>
+<b>Note:</b> One should not omit the name attribute as when we submit the form the HTTP request includes both name-value pair and if name is not available it will not process that input field.
+</p>
+<br>
+<br>
+<form action="action.html" method="post" target="_self" enctype="application/x-www-form-urlencoded">
+<fieldset>
+<Legend> <b>HTML Name Attribute</b> </Legend>
+<Label for="UserName"> Enter Your Name: </Label>
+<input type="text" name="UserName" /><br>
+<Label for="EmailId"> Enter Your Email: </Label>
+<input type="text" name="Email"/><br>
+<Label For="PasswordWithOutNameAttribute"> Enter Your Password: </Label>
+<input type="password" id="password"/><br>
+<input type="submit" value="Submit"/>
+</fieldset>
+</form>
+</body>
+</html>

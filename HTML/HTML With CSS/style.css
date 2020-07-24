@@ -1,0 +1,18 @@
+h1
+{
+   text-align: center;
+   color:green;
+   background-color:black;
+}
+.unorder{
+list-style-type:circle;
+text-align:left;
+font-size:18px;
+font-style:italy;
+color:blue;
+}
+#def{
+color:orange;
+text-align:justify;
+font-size:20px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> HTML Id Attribute </title>
+<style>
+#def{
+list-style-type: disc;
+color:red;
+font-size:25px;
+text-align:left;
+}
+b
+{
+color:black;
+}
+</style>
+</head>
+<body>
+<h1 title="HTMLIdAttribute"> HTML Id Attribute </h1>
+<br>
+<br>
+<ol title="IdAttrDefinition" id="def">
+	<li>The <b>id attribute</b> is used to specify the unique ID for an element of the HTML document. </li>
+	<li>It allocates the unique identifier which is used by the <b>CSS</b> and the <b>JavaScript</b> for performing certain tasks.</li>
+	<li>In the Cascading Style sheet (CSS), we can easily select an element with the specific id by using the <b># symbol</b> followed by id.</li>
+	<li>JavaScript can access an element with the given ID by using the <b>getElementById()</b> method.</li>
+</ol>
+<br>
+<h2 title="JavaScriptIdAttribute"> JavaScript Id Attribute </h2>
+<br>
+<Label For="UserName"> Enter Your Name </Label>
+<input type="text" id="uname" name="UserName" placeholder="Thirunavukkarasu" required/><br>
+<button onclick="updateh3()"> UpdateHeader3</button>
+<br>
+<br>
+<h3> Entered User Name is : <span id="n_name"></span></h3>
+<br>
+<br>
+<script type="text/javascript">
+function updateh3() {
+var nam=document.getElementById("uname").value;
+var h3=document.getElementById("n_name");
+h3.innerHTML=nam;
+h3.style.color="green";
+}
+</script>
+</body>
+</html>

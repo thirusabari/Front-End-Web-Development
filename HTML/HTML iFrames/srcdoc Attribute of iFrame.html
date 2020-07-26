@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> srcdoc Attribute of iFrame </title>
+</head>
+<body>
+	<h1> srcdoc Attribute of iFrame </h1>
+	<br>
+	<br>
+	<h2 title="srcAttribute"> src Attribute of iFrame </h2>
+	<iFrame src="https://www.youtube.com/embed/9_T5ELPbdqM"
+	width="500" height="350" frameborder="1"
+	allowFullScreen></iFrame>
+	<br>
+	<br>
+	<h2 title="srcDocDef"> srcDocAttribute Definition </h2>
+	<br>
+	<br>
+	
+	<p title="srcDocAttributeDef">
+	The srcdoc property sets or returns the value of the srcdoc attribute in an iframe element.<br><br>
+	The srcdoc attribute specifies the HTML content of the page to shown in the inline frame.<br><br>
+	<b>Tip:</b> This attribute is expected to be used together with the sandbox and seamless attributes.<br><br>
+	If a browser supports the srcdoc attribute, it will override the content specified in the src attribute (if present).<br><br>
+	If a browser does NOT support the srcdoc attribute, it will show the file specified in the src attribute instead (if present).<br><br>
+	</p>
+	<br>
+	<br>
+	<iFrame srcdoc="<h1> Something Different</h1><br><br><p title="SomethingDifferent"> Innovative Ideas </p>"
+	width="500" height="400" frameborder="1" allowFullScreen></iFrame>
+	<br>
+	<br>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> HTML JavaScript Introduction </title>
+</head>
+<body>
+	<h1> HTML JavaScript Introduction </h1>
+	<br>
+	<p title="JavaScriptDef">
+	A Script is a small program which is used with HTML to make web pages more attractive, dynamic and interactive, <br>
+	such as an alert popup window on mouse click. Currently, the most popular scripting language is JavaScript used for websites.
+	</p>
+	<br>
+	<h2 title="Script Tag"> Script Tag </h2>
+	<br>
+	<p title="ScriptTagDefinition">
+	The HTML <b>script</b> tag is used to specify a client-side script. <br>
+	It may be an internal or external JavaScript which contains scripting statements, hence we can place <b>script</b> tag within <br>
+	<b>body</b> or <b>head</b> section.<br>
+	<br>
+	It is mainly used to manipulate images, form validation and change content dynamically. 
+	JavaScript uses <b>document.getElementById()<b> method to <i>select an HTML element</i>.
+	</p>
+	<br>
+	<Label For="InputValue"> Enter Your Age:  </Label>
+	<input type="number" name="Age" min="25" max="50" required id="age"/><br>
+	<button onclick="updateEnNo()"> UpdateEnNumberPara </button>
+	
+	<br>
+	<br>
+	<p id="EnNumber"></p>	
+	<br>
+	<br>
+	<script type="text/javascript">
+	function updateEnNo() {
+		var age=document.getElementById("age").value;
+		document.getElementById("EnNumber").innerHTML="Entered age is = "+age;
+	}
+	</script>
+	
+</body>
+</html>

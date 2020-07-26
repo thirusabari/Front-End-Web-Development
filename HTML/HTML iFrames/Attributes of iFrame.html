@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Attributes of iFrame </title>
+<style>
+table, th, td {
+border-collapse:collapse;
+border:1px solid black;
+}
+th, td {
+padding:10px;
+}
+table {
+width:100%;
+}
+</style>
+</head>
+<body>
+<h1> Attributes of iFrame </h1>
+<br>
+<br>
+<table>
+<thead>
+<th> Attribute Name </th>
+<th> Value </th>
+<th> Description </th>
+</thead>
+<tbody>
+<tr>
+    <td>allowfullscreen</td>
+    <td></td>
+	<td>If true then that frame can be opened in full screen.</td>
+</tr>
+<tr>
+    <td>height</td>
+    <td>Pixels</td>
+	<td>It defines the height of the embedded iframe, and the default height is 150 px.</td>
+</tr>
+<tr>
+    <td>name</td>
+    <td>text</td>
+	<td>It gives the name to the iframe. The name attribute is important if you want to create a link in one frame.</td>
+</tr>
+<tr>
+    <td>frameborder</td>
+    <td>1 or 0 </td>
+	<td>It defines whether iframe should have a border or not. (Not supported in HTML5).</td>
+</tr>
+<tr>
+    <td>Width</td>
+    <td>Pixels</td>
+	<td>It defines the width of embedded frame, and default width is 300 px.</td>
+</tr>
+<tr>
+    <td>src</td>
+    <td>URL</td>
+	<td>The src attribute is used to give the path name or file name which content to be loaded into iframe.</td>
+</tr>
+<tr>
+    <td rowspan="6">sandbox</td>
+</tr>
+<tr>
+    <td></td>
+	<td>This attribute is used to apply extra restrictions for the content of the frame</td>
+</tr>
+<tr>
+    <td>allow-forms	</td>
+	<td>It allows submission of the form if this keyword is not used then form submission is blocked.</td>
+</tr>
+<tr>
+    <td>allow-popups</td>
+	<td>It will enable popups, and if not applied then no popup will open.</td>
+</tr>
+<tr>
+    <td>allow-scripts</td>
+	<td>It will enable the script to run.</td>
+</tr>
+<tr>
+    <td>allow-same-origin</td>
+	<td>If this keyword is used then the embedded resource will be treated as downloaded from the same source.</td>
+</tr>
+<tr>
+    <td>srcdoc</td>
+    <td></td>
+	<td>The srcdoc attribute is used to show the HTML content in the inline iframe. It overrides the src attribute (if a browser supports).</td>
+</tr>
+<tr>
+	<td rowspan="5">scrolling</td>
+</tr>
+<tr>
+    <td></td>
+	<td>It indicates that browser should provide a scroll bar for the iframe or not. (Not supported in HTML5)</td>
+</tr>
+<tr>
+    <td>auto</td>
+	<td>Scrollbar only shows if the content of iframe is larger than its dimensions. </td>
+</tr>
+<tr>
+    <td>yes	</td>
+	<td>Always shows scroll bar for the iframe.</td>
+</tr>
+<tr>
+    <td>no</td>
+	<td>Never shows scrollbar for the iframe.</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
